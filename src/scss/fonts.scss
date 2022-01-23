@@ -1,0 +1,87 @@
+@font-face {
+	font-style: normal;
+	font-display: swap;
+	font-weight: normal;
+	font-family: 'icomoon';
+	src: url('../fonts/icomoon.eot');
+	src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.woff2') format('woff2'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.svg#icomoon') format('svg');
+}
+
+@font-face {
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-SemiBold.eot');
+	src: url('../fonts/Montserrat-SemiBold.eot?#iefix')
+			format('embedded-opentype'),
+		url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+		url('../fonts/Montserrat-SemiBold.woff') format('woff'),
+		url('../fonts/Montserrat-SemiBold.ttf') format('truetype'),
+		url('../fonts/Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg');
+}
+
+@font-face {
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Bold.eot');
+	src: url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+		url('../fonts/Montserrat-Bold.woff') format('woff'),
+		url('../fonts/Montserrat-Bold.ttf') format('truetype'),
+		url('../fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+}
+
+[class^='_icon-']::before,
+[class*=' _icon-']::before {
+	speak: never;
+	line-height: 1;
+	color: #828282;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	font-family: 'icomoon' !important;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+._icon-global:before {
+	content: '\e900';
+}
+._icon-phone:before {
+	content: '\e901';
+}
+._icon-mailbox:before {
+	content: '\e902';
+}
+._icon-home:before {
+	content: '\e903';
+}
+._icon-email:before {
+	content: '\e904';
+}
+._icon-city:before {
+	content: '\e905';
+}
+._icon-account:before {
+	content: '\e906';
+}
+._icon-arrow-down:before {
+	content: '\e907';
+}
+._icon-add:before {
+	content: '\e908';
+}
+._icon-remove:before {
+	content: '\e909';
+}
+._icon-done:before {
+	content: '\e90a';
+}

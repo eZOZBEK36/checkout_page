@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Checkout Page</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="description" content="Checkout landing page" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<section class="checkout">
+			<div class="checkout__container">
+				<h1 class="checkout__title">Checkout</h1>
+				<div class="checkout__row">
+					<form action="/" class="checkout__form form-checkout">
+						<div class="form-checkout__title">Contact infomation</div>
+						<div class="form-checkout__name">E-mail</div>
+						<label for="email-checkout" class="form-checkout__label">
+							<span class="form-checkout__icon _icon-email"></span>
+							<input
+								required
+								type="email"
+								name="email"
+								autocomplete="off"
+								id="email-checkout"
+								class="form-checkout__input"
+								list="email-checkout-datalist"
+								placeholder="Enter your email..."
+							/>
+							<datalist id="email-checkout-datalist"></datalist>
+						</label>
+						<div class="form-checkout__name">Phone</div>
+						<label for="phone-checkout" class="form-checkout__label">
+							<span class="form-checkout__icon _icon-phone"></span>
+							<input
+								required
+								type="tel"
+								autocomplete="off"
+								name="phone_number"
+								id="phone-checkout"
+								class="form-checkout__input"
+								pattern="(\+?\d[- .]*){7,13}"
+								list="phone-checkout-datalist"
+								placeholder="Enter your phone..."
+							/>
+							<datalist id="phone-checkout-datalist"></datalist>
+						</label>
+						<div class="form-checkout__title">Contact infomation</div>
+						<div class="form-checkout__name">Full name</div>
+						<label for="name-checkout" class="form-checkout__label">
+							<span class="form-checkout__icon _icon-account"></span>
+							<input
+								required
+								type="tel"
+								name="name"
+								id="name-checkout"
+								class="form-checkout__input"
+								list="name-checkout-datalist"
+								placeholder="Your full name..."
+							/>
+							<datalist id="name-checkout-datalist"></datalist>
+						</label>
+						<div class="form-checkout__name">Address</div>
+						<label for="address-checkout" class="form-checkout__label">
+							<span class="form-checkout__icon _icon-home"></span>
+							<input
+								required
+								type="text"
+								name="addres"
+								autocomplete="off"
+								id="address-checkout"
+								class="form-checkout__input"
+								placeholder="Your address..."
+								list="address-checkout-datalist"
+							/>
+							<datalist id="address-checkout-datalist"></datalist>
+						</label>
+						<div class="form-checkout__name">City</div>
+						<label for="city-checkout" class="form-checkout__label">
+							<span class="form-checkout__icon _icon-city"></span>
+							<input
+								required
+								type="text"
+								name="city"
+								id="city-checkout"
+								autocomplete="off"
+								placeholder="Your city..."
+								class="form-checkout__input"
+								list="city-checkout-datalist"
+							/>
+							<datalist id="city-checkout-datalist"></datalist>
+						</label>
+						<div class="form-checkout__labels">
+							<div class="form-checkout__name">Country</div>
+							<div class="form-checkout__name">Postal code</div>
+							<label
+								for="city-checkout"
+								class="form-checkout__label _select"
+							>
+								<span class="form-checkout__icon _icon-global"></span>
+								<span class="form-checkout__select-label">
+									Your country...
+								</span>
+								<div
+									class="form-checkout__select-btn _icon-arrow-down"
+								></div>
+								<ul class="form-checkout__select-list">
+									<li class="form-checkout__select-item">USA</li>
+									<li class="form-checkout__select-item">Germany</li>
+									<li class="form-checkout__select-item">France</li>
+									<li class="form-checkout__select-item">Russia</li>
+									<li class="form-checkout__select-item">Brasil</li>
+									<li class="form-checkout__select-item">Japan</li>
+									<li class="form-checkout__select-item">China</li>
+								</ul>
+							</label>
+							<label for="city-checkout" class="form-checkout__label">
+								<span class="form-checkout__icon _icon-mailbox"></span>
+								<input
+									required
+									type="text"
+									name="pcode"
+									id="pcode-checkout"
+									autocomplete="off"
+									placeholder="Your postal code..."
+									class="form-checkout__input"
+									list="pcode-checkout-datalist"
+								/>
+								<datalist id="pcode-checkout-datalist"></datalist>
+							</label>
+						</div>
+						<div class="form-checkout__checkbox">
+							<input type="checkbox" name="snt" id="save-next-time" />
+							<label
+								for="save-next-time"
+								class="form-checkout__checkbox-label _icon-done"
+							></label>
+							<label for="save-next-time"
+								>Save this information for next time</label
+							>
+						</div>
+						<div class="form-checkout__submit">
+							<button type="submit">Continue</button>
+						</div>
+					</form>
+					<div class="checkout__product-card product-card">
+						<div class="product-card__body">
+							<div class="product-card__item">
+								<div class="product-card__image">
+									<picture>
+										<source
+											srcset="img/photo1.png"
+											type="image/png"
+										/>
+										<source
+											srcset="img/photo1.webp"
+											type="image/png"
+										/>
+										<img src="img/photo1.webp" alt="IMAGE" />
+									</picture>
+								</div>
+								<div class="product-card__item-body">
+									<div class="product-card__name">Vintage Backbag</div>
+									<div class="product-card__price">
+										$54.99
+										<span> $94.99</span>
+									</div>
+									<div class="product-card__quantity">
+										<button
+											type="button"
+											class="product-card__dec _icon-remove"
+										></button>
+										<div class="product-card__num">0</div>
+										<button
+											type="button"
+											class="product-card__inc _icon-add"
+										></button>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__item">
+								<div class="product-card__image">
+									<picture>
+										<source
+											srcset="img/photo2.png"
+											type="image/png"
+										/>
+										<source
+											srcset="img/photo2.webp"
+											type="image/png"
+										/>
+										<img src="img/photo2.webp" alt="IMAGE" />
+									</picture>
+								</div>
+								<div class="product-card__item-body">
+									<div class="product-card__name">Levi Shoes</div>
+									<div class="product-card__price">
+										$74.99
+										<span> $124.99</span>
+									</div>
+									<div class="product-card__quantity">
+										<button
+											type="button"
+											class="product-card__dec _icon-remove"
+										></button>
+										<div class="product-card__num">0</div>
+										<button
+											type="button"
+											class="product-card__inc _icon-add"
+										></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="product-card__footer">
+							<div class="product-card__footer-item">
+								<span>Shipping</span>
+								<span>$19</span>
+							</div>
+							<div class="product-card__footer-item">
+								<span>Total</span>
+								<span>$148.98</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<a href="https://github.com/eZOZBEK36" class="footer__link">
+				created by <span>eZOZBEK</span> - devChallenges.io
+			</a>
+		</footer>
+		<script src="js/script.js"></script>
+	</body>
+</html>
